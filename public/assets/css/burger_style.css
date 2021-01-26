@@ -1,0 +1,58 @@
+/* ----------------------------*/
+/* ------ general styles ------*/
+/* ----------------------------*/
+
+body {
+    background-color:#fdc082;
+    color:black;
+    margin-top:5%;
+    text-align: center;
+}
+
+.burger-img {
+    margin-top:5%;
+    width:30%;
+    display:block;
+    margin:0px auto;
+}
+
+textarea {
+    display:block;
+    margin:0px auto;
+    width:30%;
+    height:5em;
+    margin-bottom:1em;
+}
+
+/* ----------------------------*/
+/* ------- text styles --------*/
+/* ----------------------------*/
+
+h1 {
+    color:red;
+}
+
+ol {
+    text-align: left;
+}
+
+
+/* ----------------------------*/
+/* ------- button styles ------*/
+/* ----------------------------*/
+
+.submit {
+    padding:1.5%;
+    font-style:italic;
+    font-weight:bold;
+    border:none;
+    background-color:red;
+    color:white;
+    border-radius: 10px;
+    width:15%;
+}
+
+.submit:hover,
+.devour:hover {
+    cursor: pointer;
+}

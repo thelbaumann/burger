@@ -16,7 +16,7 @@
         {{#each burgers}}
             {{#unless devoured}}
                 <li>
-                    <p>{{burger_name}}</p>
+                    {{burger_name}} &nbsp;
                     <button class="devour" name="devour" data-id="{{id}}">
                         Devour this!</button>
                 </li>
@@ -29,7 +29,7 @@
         {{#each burgers}}
             {{#if devoured}}
                 <li>
-                    <p>{{burger_name}}</p>
+                    {{burger_name}}
                 </li>
             {{/if}}
         {{/each}}
@@ -59,8 +59,11 @@
 
     
         $.ajax("/api/burgers", {
+
             type: "POST",
+
             data: burgerObj
+            
         }).then(() => {
 
             location.reload();
@@ -75,11 +78,15 @@
         let id = $(this).attr("data-id");
 
         $.ajax("/api/burgers/" + id, {
+
             type: "PUT", 
+
             data: id
+
         }).then(() => {
-            console.log("Burger Devoured!");
+
             location.reload();
+
         });
     });
 

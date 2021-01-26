@@ -3,7 +3,7 @@ const burger = require("../models/burger");
 var router = express.Router();
 
 // Create all our routes and set up logic within those routes where required.
-router.get("/", function(req, res) {
+router.get("/index", function(req, res) {
   burger.all(function(data) {
     var hbsObject = { burgers: data };
     res.render("index", hbsObject);
@@ -14,9 +14,8 @@ router.post("/api/burgers", function(req, res) {
 
   burger.create([req.body.burger_name], function(result) {
 
-    console.log("req.body.burger_name: " + req.body.burger_name);
-
     res.json({ id: result.insertId });
+    
   });
 
 });
