@@ -1,0 +1,31 @@
+
+<ol>
+    {{#each burgers}}
+        {{#unless devoured}}
+            <li>
+                <p>{{burger_name}}</p>
+                <button class="devour" name="devour">Devour this!</button>
+            </li>
+        {{/unless}}
+    {{/each}}
+</ol>
+
+<ol>
+    {{#each burgers}}
+        {{#if devoured}}
+            <li>
+                <p>{{burger_name}}</p>
+                <button class="devour" name="devour">Devour this!</button>
+            </li>
+        {{/if}}
+    {{/each}}
+</ol>
+
+
+<form action="/" method="POST">
+
+    <textarea type="text" name="burgerName"></textarea>
+
+    <button type="submit">Submit</button>
+
+</form>

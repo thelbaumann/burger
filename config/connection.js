@@ -1,9 +1,9 @@
 const mysql = require("mysql");
 
-module.exports = mysql.createConnection({
+var connection = mysql.createConnection({
     host: 'localHost',
   
-    port: process.env.PORT || 3306,
+    port: 3306,
   
     user: 'root',
   
@@ -11,3 +11,6 @@ module.exports = mysql.createConnection({
   
     database: 'burgers_db'
   });
+
+
+module.exports = connection;
