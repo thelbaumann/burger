@@ -1,18 +1,14 @@
-const connection = require("./config/connection");
-const express = require('express');
-const { query } = require("./connection");
-
-const app = express();
+const connection = require("./connection");
 
 const orm = {
 
     selectAll: function(table, cb) {
 
-        var queryString = "SELECT * FROM ?";
+        var queryString = "SELECT * FROM ??";
 
-        connection.query(queryString, [table], function(err, result){
+        connection.query(queryString, [table], function(err, result) {
 
-            if (err) throw err;
+            if (err) {console.log(err);};
 
             cb(result);
 
@@ -26,7 +22,7 @@ const orm = {
 
         connection.query(queryString, [table, column, data], function(err, result) {
 
-            if (err) throw err;
+            if (err) {console.log(err);};
     
             cb(result);
 
@@ -34,13 +30,13 @@ const orm = {
 
     },
 
-    updateOne: function(table, column, data, cb) {
+    updateOne: function(table, column, data, column2, data2, cb) {
 
-        var queryString = "UPDATE INTO ?? (??) VALUES (?)";
+        var queryString = "UPDATE ?? SET ?? = ? WHERE ?? = ?";
 
-        connection.query(queryString, [table, column, data], function(err, result) {
+        connection.query(queryString, [table, column, data, column2, data2], function(err, result) {
 
-            if (err) throw err;
+            if (err) {console.log(err);};
     
             cb(result);
             

@@ -12,5 +12,18 @@ var connection = mysql.createConnection({
     database: 'burgers_db'
   });
 
+  connection.connect((err) => {
+
+    if (err) {
+        console.log(err);
+        return;
+    }
+  
+    else {
+        console.log(`Successfully connected on ${connection.config.port}`);
+    }
+    
+});
+
 
 module.exports = connection;
