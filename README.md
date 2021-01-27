@@ -4,7 +4,7 @@ This is a Node.js-driven mini application deployed to the web. Every line of cod
 
 ## Table of Contents
 
-[Assignment Details & Acceptance Criteria](#assignment-details-acceptance-criteria) 
+[Assignment Details & Acceptance Criteria](#assignment-details--acceptance-criteria) 
 
 [Installing/Dependencies](#installingdependencies)  
 
@@ -19,12 +19,12 @@ This is a Node.js-driven mini application deployed to the web. Every line of cod
 [License](#license)
 
 ## Assignment Details & Acceptance Criteria
-#### Assignment Details
+### Assignment Details
 I was given the following user story to guide my development:
 
 "In this assignment, you'll create a burger logger with MySQL, Node, Express, Handlebars and a homemade ORM (yum!). Be sure to follow the MVC design pattern; use Node and MySQL to query and route data in your app, and Handlebars to generate your HTML."
 
-#### Acceptance Criteria
+### Acceptance Criteria
 
 - Summarized Acceptance Criteria:
 
