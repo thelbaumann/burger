@@ -22,14 +22,11 @@ This is a Node.js-driven mini application deployed to the web. Every line of cod
 #### Assignment Details
 I was given the following user story to guide my development:
 
-```
-In this assignment, you'll create a burger logger with MySQL, Node, Express, Handlebars and a homemade ORM (yum!). Be sure to follow the MVC design pattern; use Node and MySQL to query and route data in your app, and Handlebars to generate your HTML.
-```
+"In this assignment, you'll create a burger logger with MySQL, Node, Express, Handlebars and a homemade ORM (yum!). Be sure to follow the MVC design pattern; use Node and MySQL to query and route data in your app, and Handlebars to generate your HTML."
 
 #### Acceptance Criteria
-As a part of this project, I was also provided with the following minimum requirements for my project:
 
-- This application should:
+- Summarized Acceptance Criteria:
 
     -> be written from scratch
 
