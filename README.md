@@ -53,7 +53,7 @@ The MVC routing of this app gives it its main functionality. The three main func
 
 After all the info is handled by the server file and the MVC structure, the handlebars templates and javascript come into the picture. A main and index handlebars file are used to draw the page for the user, and present the user with dynamic lists based on sandwiches devoured/not devoured and provide a form for new sandwich inputs. The javascript on these files handles the click events for both the form submit button (which triggers the insertOne() method and passes the user input) and also the devour button (which triggers the updateOne() method and passes the id captured from the associated sandwich). Finally, some overarching css and an image in the public directory style the rest of the site for user experience.
 
-![Gif Walkthrough of Application](https://www.youtube.com/watch?v=Cio91wbjGGA&feature=youtu.be).
+![Gif Walkthrough of Application](https://media.giphy.com/media/6rO8L9b3DEdk9kK7yr/giphy.gif).
 
 [Again, you can check out the deployed project here!](https://radiant-tor-37762.herokuapp.com/index)
 
